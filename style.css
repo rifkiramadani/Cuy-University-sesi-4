@@ -1,0 +1,16 @@
+#nav-li:hover {
+    background-color: brown;
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    color: white;
+}
+
+#nav-li {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.nav-li-link {
+    text-decoration: none;
+}

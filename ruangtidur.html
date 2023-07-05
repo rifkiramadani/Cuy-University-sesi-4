@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Cuy University Sesi 4</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <nav class="bg-white" style="height: 15vh">
+         <ul class="d-flex justify-content-evenly pb-3 pt-3">
+             <a class="nav-li-link" href="ruangkeluarga.html"><li id="nav-li">RUANGAN KELUARGA</li></a>
+            <a class="nav-li-link" href="ruangmakan.html"><li id="nav-li">RUANGAN MAKAN</li></a>
+            <a class="nav-li-link" href="ruangtidur.html"><li id="nav-li">RUANGAN TIDUR</li></a>
+            <a class="nav-li-link" href="ruangantamu.html"><li  id="nav-li">RUANGAN TAMU</li></a>
+        </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="bg-gray-800" style="height: 550px;">
+        <!-- RUANGAN TIDUR -->
+            <h1 class="text-center text-white pt-10">RUANGAN TIDUR</h1>
+            <!-- SEMUA LAMPU -->
+            <div class="text-center">
+                <div class="d-flex flex-col justify-content-center items-center gap-2 px-8 py-5">
+                    <span class="ml-3 text-lg font-medium text-white dark:text-gray-300">NYALAKAN SEMUA LAMPU</span>
+                    <label class="relative inline-flex items-center cursor-pointer" for="all-toggle-2">
+                        <input type="checkbox" value="" class="sr-only peer" id="all-toggle-2" onchange="saklar3()">
+                        <div class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
+                    </label>
+                </div>
+            </div>
+    
+            <ul class="d-flex flex-row justify-content-center ">
+                <li>
+                    <!-- LAMPU 5 -->
+                    <div class="flex flex-col gap-2 items-center px-5 py-3">
+                        <img src="assets/images/off.gif" alt="LAMPU" id="lampu5">
+                        <label class="relative inline-flex items-center cursor-pointer" for="default-toggle-5">
+                            <input type="checkbox" value="" class="sr-only peer" id="default-toggle-5" onchange="saklar3()">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                            <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+                        </label>
+                    </div>
+                </li>
+    
+                <li>
+                    <!-- LAMPU 6 -->
+                    <div class="flex flex-col gap-2 items-center px-5 py-3">
+                        <img src="assets/images/off.gif" alt="" id="lampu6">
+                        <label class="relative inline-flex items-center cursor-pointer" for="default-toggle-6">
+                            <input type="checkbox" value="" class="sr-only peer" id="default-toggle-6" onchange="saklar3()">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                            <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    <!-- FOOTER START -->
+        <footer class="bg-white text-center" style="height: 20px;">
+            <p>Created By Muhammad Rifky Ramadani</p>
+        </footer>
+    <!-- FOOTER END -->
+
+    <script src="app.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
